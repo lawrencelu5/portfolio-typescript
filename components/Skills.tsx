@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { motion } from 'framer-motion'
 import { setTarget } from 'framer-motion/types/render/utils/setters'
+import Title from './Title'
 
 const Skills = () => {
   const SKILLS_SET = [
@@ -21,7 +22,7 @@ const Skills = () => {
 
   return (
     <div className="flex flex-col">
-      <h1 className="font-serif text-5xl">My Skills</h1>
+      <Title title="My Skills" />
       <div className="m-10 flex flex-wrap items-center justify-center gap-6">
         {SKILLS_SET.map((element, i) => {
           return (
