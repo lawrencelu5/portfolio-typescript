@@ -5,7 +5,7 @@ import { Header, Intro, Skills } from '../components'
 
 const Home: NextPage = () => {
   return (
-    <div className="container mx-auto flex flex-col space-y-80">
+    <div className="container mx-auto flex flex-col space-y-48">
       <div className="box-border h-32 p-4">
         <Header />
       </div>
