@@ -13,8 +13,8 @@ const Header = () => {
       href: 'skills',
     },
     {
-      name: 'Work',
-      href: 'work',
+      name: 'Projects',
+      href: 'projects',
     },
     {
       name: 'Contact',
@@ -24,22 +24,24 @@ const Header = () => {
 
   return (
     <div className="flex justify-end">
-      <nav className="grid grid-flow-col gap-12 text-2xl">
-        {NAV_ITEMS.map((item, i) => {
-          return (
-            <Link href={'#' + item.href}>
-              <motion.a
-                whileHover={{ scale: 1.2 }}
-                onHoverStart={(e) => {}}
-                onHoverEnd={(e) => {}}
-                className="cursor-pointer"
-              >
-                {item.name}
-              </motion.a>
-            </Link>
-          )
-        })}
-      </nav>
+      <div className="box-border p-4">
+        <nav className="grid grid-flow-col gap-12 text-2xl">
+          {NAV_ITEMS.map((item, i) => {
+            return (
+              <Link href={'#' + item.href}>
+                <motion.a
+                  whileHover={{ scale: 1.2 }}
+                  onHoverStart={(e) => {}}
+                  onHoverEnd={(e) => {}}
+                  className="cursor-pointer"
+                >
+                  {item.name}
+                </motion.a>
+              </Link>
+            )
+          })}
+        </nav>
+      </div>
     </div>
   )
 }

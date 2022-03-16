@@ -15,7 +15,7 @@ const Title: React.FC<HeaderTitle> = ({ title }) => {
       transition={{ duration: 1 }}
       variants={{
         visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: -100 },
+        hidden: { opacity: 0, x: -70 },
       }}
     >
       <h1 className="text-5xl">{title}</h1>

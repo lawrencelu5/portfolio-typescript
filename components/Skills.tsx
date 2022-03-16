@@ -21,7 +21,7 @@ const Skills = () => {
   ]
 
   return (
-    <div className="flex flex-col">
+    <section className="flex flex-col">
       <Title title="My Skills" />
       <div className="m-10 flex flex-wrap items-center justify-center gap-6">
         {SKILLS_SET.map((element, i) => {
@@ -37,15 +37,26 @@ const Skills = () => {
               onHoverEnd={(e) => {}}
               className="relative w-40"
               target="_blank"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: i * 0.3 }}
+              variants={{
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                },
+                hidden: { opacity: 0, y: 30 },
+              }}
             >
-              <span className="cursor-pointer">
+              <span key={i} className="cursor-pointer">
                 <img src={'./images/' + element.img} />
               </span>
             </motion.a>
           )
         })}
       </div>
-    </div>
+    </section>
   )
 }
 

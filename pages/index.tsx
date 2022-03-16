@@ -1,16 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Header, Intro, Skills } from '../components'
+import { BackgroundImage, Header, Intro, Projects, Skills } from '../components'
+import { motion } from 'framer-motion'
 
 const Home: NextPage = () => {
   return (
-    <div className="container mx-auto flex flex-col space-y-48">
-      <div className="box-border h-32 p-4">
+    <div>
+      <BackgroundImage />
+      <div className="container mx-auto flex flex-col">
         <Header />
+        <Intro />
+        <Skills />
+        <Projects />
       </div>
-      <Intro />
-      <Skills />
     </div>
   )
 }
