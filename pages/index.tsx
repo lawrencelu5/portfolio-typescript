@@ -7,7 +7,6 @@ import { motion } from 'framer-motion'
 const Home: NextPage = () => {
   return (
     <div>
-      <BackgroundImage />
       <div className="container mx-auto flex flex-col">
         <Header />
         <Intro />
