@@ -7,8 +7,8 @@ import { motion } from 'framer-motion'
 const Home: NextPage = () => {
   return (
     <div>
+      <Header />
       <div className="container mx-auto flex flex-col">
-        <Header />
         <Intro />
         <Skills />
         <Projects />

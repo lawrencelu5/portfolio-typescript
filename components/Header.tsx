@@ -23,8 +23,8 @@ const Header = () => {
   ]
 
   return (
-    <div className="flex justify-end">
-      <div className="box-border p-4">
+    <div className="sticky top-0 z-50 flex justify-end bg-gray-700 py-3 text-white drop-shadow-lg">
+      <div className="mr-6 box-border p-3">
         <nav className="grid grid-flow-col gap-12 text-2xl">
           {NAV_ITEMS.map((item, i) => {
             return (
