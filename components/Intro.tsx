@@ -20,6 +20,9 @@ const Intro = () => {
           spare time.
         </p>
       </div>
+      <div>
+        <motion.img animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 6, ease: 'linear'}} className='bg-auto bg-center opacity-25' src='images/reactjs.svg'/>
+      </div>
     </section>
   )
 }

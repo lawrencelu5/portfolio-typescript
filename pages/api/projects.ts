@@ -12,6 +12,6 @@ export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
         name: "E-Exit Hint Application",
         description: "An interactive android application that generates information and exports them via QR codes, so users can gather clues, notes, and answers in the E-EXIT escape rooms.",
         url: "",
-        skills: []
+        skills: ["Java", "Sqlite", "Android Studio"]
     })
 }
