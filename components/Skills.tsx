@@ -23,13 +23,13 @@ const Skills = () => {
   return (
     <section className="flex flex-col py-16">
       <Title title="My Skills" />
-      <div className="m-10 flex flex-wrap items-center justify-center gap-6">
+      <div className="m-10 flex flex-wrap items-center justify-center gap-6 pt-16">
         {SKILLS_SET.map((element, i) => {
           return (
             <motion.a
               key={i}
               href={element.href}
-              className="relative w-40"
+              className="relative w-24 lg:w-40"
               target="_blank"
               initial="hidden"
               whileInView="visible"

@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 interface CardInfo {
   projectName: string
@@ -54,7 +55,20 @@ const Cards: React.VoidFunctionComponent<CardInfo> = ({
   skills,
 }) => {
   return (
-    <div className="flex max-w-md flex-col overflow-hidden rounded bg-white p-3 shadow-lg">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+      variants={{
+        visible: {
+          opacity: 1,
+          y: 0,
+        },
+        hidden: { opacity: 0, y: 30 },
+      }}
+      className="flex max-w-md flex-col overflow-hidden rounded bg-white p-3 shadow-lg"
+    >
       <img src="./images/project1.png" />
       <div className="space-x-6 space-y-6 py-6">
         <div className="mb-2 text-center text-xl font-bold text-gray-700">
@@ -71,7 +85,7 @@ const Cards: React.VoidFunctionComponent<CardInfo> = ({
             return <Badges key={element} item={skills[i]} />
           })}
       </div>
-    </div>
+    </motion.div>
   )
 }
 
