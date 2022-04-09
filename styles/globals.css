@@ -7,7 +7,7 @@
 
 @layer base {
     body {
-        @apply bg-slate-700;
-        @apply text-neutral-300;
+        @apply bg-slate-200;
+        @apply text-black;
     }
 }
