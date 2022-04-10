@@ -9,5 +9,5 @@ module.exports = {
       sans: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif'],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }

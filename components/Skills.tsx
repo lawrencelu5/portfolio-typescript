@@ -34,11 +34,15 @@ const Skills = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: i * 0.3 }}
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3 },
+              }}
               variants={{
                 visible: {
                   opacity: 1,
                   y: 0,
+                  transition: { when: 'beforeChildren', delay: i * 0.3 },
                 },
                 hidden: { opacity: 0, y: 30 },
               }}
