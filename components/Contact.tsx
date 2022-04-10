@@ -22,7 +22,7 @@ const Contact = () => {
   ]
 
   return (
-    <section className="flex flex-col py-16">
+    <section id='contact' className="flex flex-col py-16">
       <Title title="Get in touch" />
       <div className="flex flex-row justify-around py-12">
         {CONTACT_US.map((element, i) => {

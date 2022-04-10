@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from 'react-scroll'
 import React, { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 
@@ -9,6 +9,7 @@ const variants = {
 
 const Header = () => {
   const [toggleNav, setToggleNav] = useState(false)
+  const scrollRef = useRef(null)
 
   const NAV_ITEMS = [
     {
@@ -38,13 +39,21 @@ const Header = () => {
         }}
         className="items-center text-2xl"
       >
-        <a href="#home">LLu</a>
+        <a href="#about">LLu</a>
       </motion.h1>
       <div className="container mx-auto mr-6 hidden flex-wrap justify-end p-2 px-4 lg:flex">
         <nav className="hidden grid-flow-col gap-12 text-2xl lg:visible lg:grid">
           {NAV_ITEMS.map((item, i) => {
             return (
-              <Link href={'#' + item.href}>
+              <Link
+                activeClass="active"
+                to={item.href}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                href={item.href}
+              >
                 <a className="cursor-pointer rounded-lg px-3 py-2 hover:bg-gray-400 hover:text-slate-900">
                   {item.name}
                 </a>
@@ -73,7 +82,15 @@ const Header = () => {
         >
           {NAV_ITEMS.map((item, i) => {
             return (
-              <Link href={'#' + item.href}>
+              <Link
+                activeClass="active"
+                to={item.href}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                href={item.href}
+              >
                 <a className="cursor-pointer rounded-lg px-3 py-2 hover:bg-gray-400 hover:text-slate-900">
                   {item.name}
                 </a>

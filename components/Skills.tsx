@@ -21,7 +21,7 @@ const Skills = () => {
   ]
 
   return (
-    <section className="flex flex-col py-16">
+    <section id="skills" className="flex flex-col py-16">
       <Title title="My Skills" />
       <div className="m-10 flex flex-row flex-wrap items-center justify-center gap-6 pt-16">
         {SKILLS_SET.map((element, i) => {

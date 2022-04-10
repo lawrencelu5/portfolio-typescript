@@ -3,7 +3,10 @@ import { motion } from 'framer-motion'
 
 const Intro = () => {
   return (
-    <section className="m-24 flex flex-row flex-wrap items-center justify-around lg:m-0 lg:min-h-screen">
+    <section
+      id="about"
+      className="m-24 flex flex-row flex-wrap items-center justify-around lg:m-0 lg:min-h-screen"
+    >
       <div className="space-y-4">
         <p className="text-center text-2xl lg:text-4xl">Hey, my name is</p>
         <motion.h1

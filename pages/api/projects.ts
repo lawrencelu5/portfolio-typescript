@@ -10,7 +10,7 @@ type Data = {
 export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
     res.status(200).json({
         name: "E-Exit Hint Application",
-        description: "An interactive android application that generates puzzles as QR codes, allowing users to integrate their escape room experiences with seamless technology.",
+        description: "An interactive android application that generates clues and hints via QR codes, empowering escape rooms with augmented reality.",
         url: "",
         skills: ["Java", "Sqlite", "Android Studio"]
     })

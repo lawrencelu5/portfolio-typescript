@@ -39,7 +39,7 @@ const ProjectsAPIHandler = () => {
 
 const Projects = () => {
   return (
-    <section className="flex flex-col py-16">
+    <section id="projects" className="flex flex-col py-16">
       <Title title="My Projects" />
       <div className="m-10 flex flex-wrap items-center justify-center gap-6">
         <ProjectsAPIHandler />
