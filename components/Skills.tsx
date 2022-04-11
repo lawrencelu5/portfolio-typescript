@@ -21,7 +21,7 @@ const Skills = () => {
   ]
 
   return (
-    <section className="flex flex-col py-16">
+    <section id="skills" className="flex flex-col py-16">
       <Title title="My Skills" />
       <div className="m-10 flex flex-row flex-wrap items-center justify-center gap-6 pt-16">
         {SKILLS_SET.map((element, i) => {
@@ -34,11 +34,15 @@ const Skills = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: i * 0.3 }}
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3 },
+              }}
               variants={{
                 visible: {
                   opacity: 1,
                   y: 0,
+                  transition: { when: 'beforeChildren', delay: i * 0.3 },
                 },
                 hidden: { opacity: 0, y: 30 },
               }}
