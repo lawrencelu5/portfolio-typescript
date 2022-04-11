@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <title>Lawrence Lu</title>
-        <meta property="og:title" content="Lawrence Lu" key="title" />
+        <meta name="description" content="Lawrence Lu" key="title" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
