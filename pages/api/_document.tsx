@@ -10,7 +10,7 @@ export default function Document() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="keywords"
-          content="Lawrence, Lu, Lawrence Lu, web dev, developer, programmer"
+          content="Lawrence, Lu, Lawrence Lu, web dev, developer, web developer, programmer"
         />
       </Head>
       <body>
